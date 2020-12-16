@@ -114,6 +114,7 @@ const Home = () => {
             Multiple stages? Multiple ways to set up a single stage? Share all
             the right info with your artist in one click.
           </p>
+          {/* <p sup </p> */}
         </div>
         <div className="landing-container-5-image">
           <img
