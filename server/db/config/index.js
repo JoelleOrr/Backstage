@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
+const dbUrl =
+  process.env.MONGODB_URI || `mongodb://localhost:27017/backstage-dev`;
+
 try {
-  mongoose.connect(process.env.MONGODB_URL, {
+  mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
